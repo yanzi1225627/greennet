@@ -18,7 +18,10 @@ myport remove 4444
 2. `my_no_route.txt` 我的不需要route，也即大部分国内ip.
 3. `ocserv.conf`包含上面no route设置后的配置文件.
 
-参考[https://github.com/CNMan/ocserv-cn-no-route](https://github.com/CNMan/ocserv-cn-no-route)
+参考
+1. [https://github.com/CNMan/ocserv-cn-no-route](https://github.com/CNMan/ocserv-cn-no-route)
+2. [https://www.logcg.com/archives/1343.html](https://www.logcg.com/archives/1343.html)
+
 
 ### Cisco AnyConnect VPN
 [下载](https://cnlic.com/share/client.html)
