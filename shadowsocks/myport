@@ -1,0 +1,32 @@
+#!/bin/bash
+num=$#
+ok=0
+if [ ${num} != 2 ]; then
+    echo 'error:you must input two parmas, first is add or remote, second is port number'
+    exit 0
+fi
+
+case $1 in
+
+add)
+firewall-cmd --zone=public --add-port=$2/tcp --permanent
+firewall-cmd --zone=public --add-port=$2/udp --permanent
+ok=1
+;;
+
+remove)
+firewall-cmd --zone=public --remove-port=$2/tcp --permanent
+firewall-cmd --zone=public --remove-port=$2/udp --permanent
+ok=1
+;;
+
+*)
+echo 'first params must be "add" or "remove"' 
+;;
+
+esac
+if [ ${ok} == 1 ]; then
+firewall-cmd --reload
+firewall-cmd --zone=public --list-all
+fi
+exit 0
