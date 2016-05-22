@@ -34,9 +34,16 @@ firewall-cmd --zone=public --add-port=4400-4600/tcp --permanent
 1.[锐速支持版本](http://www.91yun.org/wp-content/plugins/91yun-serverspeeder/systemlist.html)
 
 ## ocserv
-1. `ocserv-install-script-for-centos7.sh`来源[ocserv](https://github.com/travislee8964/Ocserv-install-script-for-CentOS-RHEL-7)
-2. `my_no_route.txt` 我的不需要route，也即大部分国内ip.
-3. `ocserv.conf`包含上面no route设置后的配置文件.
+
+#### CentOS7
+`ocserv-install-script-for-centos7.sh`来源[ocserv](https://github.com/travislee8964/Ocserv-install-script-for-CentOS-RHEL-7)
+
+#### debian7
+`ocservauto_deibian7.sh`，来源[github](https://github.com/fanyueciyuan/eazy-for-ss/blob/master/ocservauto/ocservauto.sh),[中文参考](http://www.fanyueciyuan.info/fq/ocserv-debian.html/comment-page-3#comments)
+
+#### 配置文件
+1. `my_no_route.txt` 我的不需要route，也即大部分国内ip.
+2. `ocserv.conf`包含上面no route设置后的配置文件.
 
 #### 参考
 1. [https://github.com/CNMan/ocserv-cn-no-route](https://github.com/CNMan/ocserv-cn-no-route)
