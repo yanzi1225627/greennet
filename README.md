@@ -2,14 +2,13 @@
 本仓库是放置centos7上科学上网用到的一些脚本和配置文件.
 
 ### shadowsocks
-1. `shadowsocks.sh`,来自[https://teddysun.com/342.html](https://teddysun.com/342.html)
+1.`shadowsocks.sh`,来自[https://teddysun.com/342.html](https://teddysun.com/342.html)
 运行以下脚本安装:
 ```
 chmod +x shadowsocks.sh
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
 ```
-
-2. myport使用示例:
+2.myport使用示例:
 将myport下载下来，增加可执行权限，然后移动到`/usr/local/sbin`目录。
 ```
 增加端口:
