@@ -12,6 +12,11 @@ myport add 4444
 删除端口:
 myport remove 4444
 ```
+也可以直接使用命令，增加端口区间 ：
+```
+firewall-cmd --zone=public --add-port=4400-4600/udp --permanent
+firewall-cmd --zone=public --add-port=4400-4600/tcp --permanent
+```
 
 ### ocserv
 1. `ocserv-install-script-for-centos7.sh`来源[ocserv](https://github.com/travislee8964/Ocserv-install-script-for-CentOS-RHEL-7)
