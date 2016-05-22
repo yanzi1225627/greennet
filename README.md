@@ -1,5 +1,5 @@
-## centos7_greennet
-本仓库是放置centos7上科学上网用到的一些脚本和配置文件.
+## greennet
+本仓库是放置centos7/debian科学上网用到的一些脚本和配置文件.
 
 ## shadowsocks
 1.`shadowsocks.sh`,来自[https://teddysun.com/342.html](https://teddysun.com/342.html)
