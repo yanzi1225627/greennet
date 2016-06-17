@@ -37,6 +37,7 @@ firewall-cmd --zone=public --add-port=4400-4600/tcp --permanent
 
 #### CentOS7
 `ocserv-install-script-for-centos7.sh`来源[ocserv](https://github.com/travislee8964/Ocserv-install-script-for-CentOS-RHEL-7)
+`ocpasswd -c /usr/local/etc/ocserv/ocserv.conf newUserName`
 
 #### debian7
 `ocservauto_deibian7.sh`，来源[github](https://github.com/fanyueciyuan/eazy-for-ss/blob/master/ocservauto/ocservauto.sh),[中文参考](http://www.fanyueciyuan.info/fq/ocserv-debian.html/comment-page-3#comments)
