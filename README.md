@@ -8,6 +8,21 @@
 chmod +x shadowsocks.sh
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
 ```
+配置文件:
+```
+{
+    "server":"133.**.*.76",
+    "local_address":"127.0.0.1",
+    "local_port":1080,
+    "port_password":{
+    "443":"abc_passwd",
+    "444":"abc_passwd"
+    },
+    "timeout":300,
+    "method":"rc4-md5",
+    "fast_open":false
+}
+```
 2.myport使用示例:
 将myport下载下来，增加可执行权限，然后移动到`/usr/local/sbin`目录。
 ```
